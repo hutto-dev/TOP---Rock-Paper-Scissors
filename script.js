@@ -33,17 +33,16 @@ console.log(getComputerChoice());
 // If human choices paper, display paper
 // If human choices scissors, display scissors
 
-let humanChoice = "";
+let humanChoice = prompt(
+  "Lets play Rock, Paper, Scissors. What is your choice?"
+);
 
-function getHumanChoice(choice) {
-  if (choice === "Rock" || choice === "rock") {
-    humanChoice = choice;
+function getHumanChoice() {
+  if (humanChoice === "Rock" || humanChoice === "rock") {
     return `Your choice: ${humanChoice}`;
-  } else if (choice === "Paper" || choice === "paper") {
-    humanChoice = choice;
+  } else if (humanChoice === "Paper" || humanChoice === "paper") {
     return `Your choice: ${humanChoice}`;
-  } else if (choice === "Scissors" || choice === "scissors") {
-    humanChoice = choice;
+  } else if (humanChoice === "Scissors" || humanChoice === "scissors") {
     return `Your choice: ${humanChoice}`;
   } else {
     return "Wrong input: Please pick Rock, Paper, or Scissors";
